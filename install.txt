@@ -1,0 +1,39 @@
+MS-Weather for xoops v2
+
+Version 1.2 by Sylvain B.
+        - Partially rewrite to make it Register_Globals=Off compliant -> OK
+        - Minor bug with table background color -> fixed.
+        - Defines reworked for less NOTICES when PHP Debugg is on.
+        - MySQL bug: when we were attempting to add a city with an apostrophe
+          in the database and then make it the default station, it was returning nothing -> fixed.
+        - Temporarely, depending of the choosen city, the url server 
+          for extended forecast is auto selected.
+          (Will be changed later)
+
+
+Version 1.1 by Sylvain B.
+	- Integrated Dutch, Spanish, French, English and German language translation files.
+	  Some defines aren't translated in an other language than English.
+
+installation 1.1:
+
+    - unzip file to modules directory
+    - add to site from admin module control panel
+    - msw_config.php file contains the tables colors variables which could be changed to suit your theme.
+
+NOTICE:
+    - Don't forget to set the cache directory (chmod 777).
+    - There are only few stations in the database, you can add more from the module admin 
+      by simply going there: http://weather.yahoo.com/
+      Select a city and copy the city code, for example: Paris -> FRXX0076
+
+    °Uploadez le module MS-Weather dans le répertoire http:votresite.com/modules de votre site xoops.
+    °Accordez des droits, CHMOD 777, au repertoire http:votresite.com/modules/MS-Weather/cache
+    °Loggez-vous comme admin et activer le module.
+    °Le fichier msw_config contient les variables de couleurs des tables, vous pouvez les modifier
+     pour une meilleure intégration avec votre thème.
+    °Il n'y a que quelques stations disponibles dans la base.
+     Vous pouvez en ajouter beaucoups d'autres via l'administration du module en allant à cette
+     addresse : http://weather.yahoo.com/
+     Choisissez la ville qui vous interesse et copier le code de celle-ci.
+     Par exemple : Paris --> FRXX0076
